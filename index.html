@@ -1,147 +1,49 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Happy Teachers' Day | Thank You, Teacher!</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
+    <title>Registration Portal</title>
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .greeting-photo {
-            display: flex;
-            justify-content: center;
-            margin: 18px 0 24px;
-        }
-
-        .greeting-photo img {
-            width: min(100%, 520px);
-            max-height: 420px;
-            object-fit: cover;
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
-        }
-    </style>
 </head>
-
 <body>
 
-    <div class="background-shapes" aria-hidden="true">
-        <span class="shape shape-1"></span>
-        <span class="shape shape-2"></span>
-        <span class="shape shape-3"></span>
-    </div>
+    <h1>Registration Portal</h1>
 
-    <main class="page">
+    <form>
+        Name:<br>
+        <input type="text" name="name"><br><br>
 
-        <section class="card" id="teacherCard">
+        Email:<br>
+        <input type="email" name="email"><br><br>
 
-            <div class="card-top">
-                <div class="school-icon">✦</div>
+        Password:<br>
+        <input type="password" name="password"><br><br>
 
-                <p class="eyebrow">
-                    A Special Message of Gratitude
-                </p>
+        Age:<br>
+        <input type="number" name="age"><br><br>
 
-                <h1>
-                    Happy Teachers' Day!
-                </h1>
+        Gender:<br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
 
-                <div class="divider">
-                    <span>♥</span>
-                </div>
-            </div>
+        Course:<br>
+        <select name="course">
+            <option>BSIS 1A</option>
+            <option>BSIS 1B</option>
+            <option>BSIS 2A</option>
+            <option>BSIS 2B</option>
+            <option>BSIS 3A</option>
+            <option>BSIS 3B</option>
+            <option>BSIS 4A</option>
+            <option>BSIS 4B</option> 
+        </select>
+        <br><br>
 
+        <input type="submit" value="Save">
+        <input type="reset" value="Clear">
 
-            <div class="message">
-
-                <p class="greeting">
-                    Dear Mr. Randy Bello,
-                </p>
-
-
-                <!-- Jonard's Picture -->
-                <div class="greeting-photo">
-                    <img src="Screenshot 2026-09-29 184938.png">
-                </div>
-
-
-                <p>
-                    Thank you for being more than just a teacher.
-                    Your patience, guidance, encouragement, and dedication
-                    inspire us to keep learning and becoming better every day.
-                </p>
-
-
-                <p>
-                    Every lesson you share becomes a small part of our future.
-                    We truly appreciate the time and effort you give to help us
-                    discover our potential and believe in ourselves.
-                </p>
-
-
-                <p class="highlight">
-                    Your lessons may be written on a board, but your impact is
-                    written in our lives.
-                </p>
-
-
-                <p>
-                    Thank you for believing in your students and for making
-                    learning meaningful. May you always know how much your work
-                    is valued and appreciated.
-                </p>
-
-
-                <p class="closing">
-                    With sincere gratitude,
-                </p>
-
-                <p class="signature">
-                    Jonard A. Dela Rosa
-                </p>
-
-                <p class="section">
-                    BSIS 2A
-                </p>
-
-            </div>
-
-
-            <div class="card-bottom">
-
-                <button id="appreciateBtn" type="button">
-                    <span>💐</span>
-                    Send Appreciation
-                </button>
-
-                <p id="thankYouText" class="hidden">
-                    Thank you for inspiring us! ✨
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <p class="footer-note">
-            Made with gratitude for Teachers' Day • 2026
-        </p>
-
-    </main>
-
-
-    <div id="confetti" aria-hidden="true"></div>
-
-    <script src="script.js"></script>
+    </form>
 
 </body>
 </html>
-
-
